@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+    <g fill="none" fill-rule="evenodd" stroke="#7CA7BC">
+        <path stroke-width="2" d="M1.534 37.424c.87-20.692 18.35-36.76 39.043-35.89 20.692.87 36.76 18.35 35.89 39.042-.87 20.693-18.35 36.761-39.042 35.891-20.693-.87-36.761-18.35-35.891-39.043z"/>
+        <text fill="#FFF" font-family="TimesNewRomanPS-BoldMT, Times New Roman" font-size="60" font-weight="bold" transform="translate(1 1)">
+            <tspan x="30" y="57">i</tspan>
+        </text>
+    </g>
+</svg>

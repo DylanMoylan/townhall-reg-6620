@@ -1,0 +1,1688 @@
+html,
+body {
+  height: 100%;
+  -webkit-overflow-scrolling: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+* {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+#bodypadding {
+  width: 100% !important;
+  font-family: 'proxima_nova_ltlight', sans-serif;
+  padding: 0;
+}
+
+#bodypadding * {
+  box-sizing: border-box;
+}
+
+#footerbar {
+  text-align: center;
+}
+
+#bodypadding {
+  font-size: 1.563em;
+  color: #333;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "proxima_nova_ltlight", sans-serif;
+  color: #005B81;
+  text-transform: none;
+}
+
+h1 {
+  font-size: 2.105em;
+}
+
+h2 {
+  font-size: 1.789em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 18px;
+  color: #000;
+  font-family: "proxima_nova_rgregular", sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #007CB0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.divider-bar {
+  width: 2px;
+  background-color: rgba(151, 151, 151, 0.23);
+  display: block;
+  margin: 0 5px;
+  min-height: 190px;
+}
+
+.town-hall {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.town-hall__section {
+  padding-top: 27px;
+  padding-bottom: 32px;
+  transition: all ease 800ms;
+  -webkit-transition: all ease 800ms;
+  opacity: 0;
+  -webkit-transform: translate(0, 5%);
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -o-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+}
+
+.town-hall-info.town-hall__section {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}
+
+.town-hall__section--ready {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*== Town Hall Post-Header Info ==*/
+
+.town-hall-info .town-hall--subsection {
+  max-width: 800px;
+  align-self: center;
+}
+
+.town-hall-info .title {
+  font-size: 22px;
+  font-family: 'proxima_nova_rgbold', sans-serif;
+}
+
+.town-hall-info .detail {
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+}
+
+.town-hall-info .town-hall--subsection {
+  background-repeat: no-repeat;
+  background-image: url('../images/focus.svg');
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.town-hall-info .town-hall--subsection:first-child {
+  background-image: url('../images/info.svg');
+}
+
+.town-hall-info .town-hall--subsection,
+.town-hall-info .town-hall--subsection.icon-left,
+.town-hall-info .town-hall--subsection.icon-right {
+  padding-left: 0;
+  margin-left: auto;
+  width: 90%;
+  margin-right: auto;
+  background-size: 76px 76px;
+  padding-bottom: 5px;
+}
+
+.town-hall-info .town-hall--subsection.icon-left {
+  padding-left: 104px;
+  background-position: top left;
+}
+
+.town-hall-info .town-hall--subsection.icon-right {
+  padding-right: 104px;
+  background-position: top right;
+  text-align: right;
+}
+
+.town-hall-content {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  padding-top: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.town-hall-bgStripe {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.town-hall-content .town-hall-speaker,
+.town-hall-content .town-hall-program {
+  padding-right: 23px;
+  padding-left: 23px;
+}
+
+.town-hall-content .town-hall--subsection {
+  max-width: 578px;
+  padding-right: 23px;
+  padding-left: 23px;
+}
+
+.town-hall-speaker .speaker,
+.town-hall-program .program-title {
+  font-size: 33px;
+  font-family: 'proxima_nova_rgbold', sans-serif;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  color: #333132;
+}
+
+.speaker-list-item {
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 80%;
+}
+
+.speaker-list-item img {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+
+.speaker-name {
+  font-family: 'proxima_nova_rgbold', sans-serif;
+  font-size: 18px;
+  color: #333132;
+}
+
+.speaker-info,
+.speaker-title {
+  color: #585858;
+}
+
+.speaker-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.speaker-info,
+.speaker-twitter a,
+.speaker-linkedin a {
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-size: 15px;
+}
+
+.speaker-twitter a,
+.speaker-linkedin a {
+  line-height: 25px;
+  padding-left: 26px;
+  color: #1b88bf;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center left;
+  width: 259px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.speaker-twitter a {
+  background-image: url('../images/twitter-icon.svg');
+}
+
+.speaker-linkedin a {
+  background-image: url('../images/linkedin-icon.svg');
+}
+
+.speaker-twitter a:hover,
+.speaker-linkedin a:hover {
+  color: #005b81;
+}
+
+/*** PROGRAM ***/
+
+.program-title .program-subtitle {
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  text-transform: initial;
+  font-size: 22px;
+  line-height: 26px;
+  margin-left: 22px;
+  color: #333132;
+}
+
+.program-timeline {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 43px;
+  overflow: hidden;
+  margin-top: -13px;
+}
+
+.program-timeline:first-child {
+  margin-top: 0;
+}
+
+.program-timeline:last-child .program-timebar {
+  display: none;
+}
+
+.program-timeline ul {
+  margin-left: 20px;
+}
+
+.program-timeline ul li {
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-size: 16px;
+  list-style: initial;
+  font-size: 16px;
+  color: #585858;
+}
+
+.program-timeline:hover li span.program-timepoint {
+  border: 0px solid #333132;
+  transition: all ease 200ms;
+  -webkit-transition: all ease 200ms;
+}
+
+.program-schedule {
+  text-align: right;
+  width: 152px;
+  color: #585858;
+}
+
+.program-schedule span {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  line-height: 33px;
+  color: #585858;
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.town-hall-program .program-timeline-wrap {
+  padding-top: 31px;
+}
+
+.town-hall-program .program-schedule span {
+  letter-spacing: -1px;
+}
+
+.town-hall-program .program-schedule span span {
+  margin-left: -5px;
+  letter-spacing: 0;
+  font-size: 15px;
+  font-weight: initial
+}
+
+.town-hall-program .program-progress {
+  padding: 10px 23px 0;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  transition: all ease 800ms;
+  -webkit-transition: all ease 800ms;
+}
+
+.town-hall-program .program-progress .program-timebar {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.town-hall-program .program-info-wrap {
+  padding-top: 5px;
+  width: 100%;
+}
+
+.program-timepoint {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #7ca7bc;
+  position: relative;
+  z-index: 2;
+}
+
+.program-timebar {
+  background-color: rgba(51, 49, 50, 0.1);
+  width: 2px;
+  /* height: 200%;
+    margin: 0px auto; */
+  display: block;
+  position: absolute;
+  margin-left: 4px;
+  z-index: 1;
+}
+
+.program-info-title {
+  font-size: 22px;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  color: #272727;
+}
+
+.program-info-subtitle {
+  font-size: 16px;
+  color: #585858;
+}
+
+/*** OBJECTIVES ***/
+
+.town-hall-details {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.town-hall-details .section-left {
+  max-width: 640px;
+  width: 75%;
+}
+
+.town-hall-details .section-right {
+  border-left: 1px solid rgba(151, 151, 151, 0.23);
+  margin-left: 21px;
+  padding-left: 30px;
+  max-width: 360px;
+  width: 25%;
+}
+
+.objective-section {
+  margin-bottom: 40px;
+}
+
+.objective-section .section-title {
+  font-family: 'proxima_nova_rgbold';
+  font-size: 22px;
+  color: #333132;
+  margin-bottom: 8px;
+}
+
+.objective-section .section-info {
+  margin-bottom: 20px;
+}
+
+.objective-section .section-list {
+  width: 100%;
+}
+
+.objective-section .section-info,
+.objective-section .section-list li {
+  font-family: 'proxima_nova_rgregular';
+  font-size: 18px;
+  color: #585858;
+}
+
+.section-left .objective-section .section-list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  display: inline-block;
+}
+
+.section-left .objective-section .section-list li {
+  width: 100%;
+  float: left;
+  padding: 0 15px 0 20px;
+  background-image: url('../images/oval-2.svg');
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 0px 5px;
+  padding-bottom: 20px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.section-left .objective-section .section-list li ul {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.section-left .objective-section .section-list li ul li {
+  font-size: 14px;
+  background-image: url('../images/oval-clear.svg');
+  background-repeat: no-repeat;
+  background-size: 10px;
+  width: 100%;
+  padding-left: 20px;
+  float: none;
+  display: inline-block;
+  padding-bottom: 0;
+}
+
+.objective-section.section-disclosure .section-title {
+  font-size: 16px;
+}
+
+.objective-section.section-disclosure .section-info {
+  font-size: 14px;
+}
+
+.objective-section.section-credits {
+  /* display: flex;
+    flex-flow: column nowrap; */
+}
+
+.objective-section.section-credits .section-title {
+  order: 1;
+}
+
+.objective-section.section-credits .section-info {
+  order: 3;
+}
+
+.objective-section.section-credits .section-list {
+  order: 2;
+  color: #585858;
+  text-transform: uppercase;
+  font-stretch: condensed;
+}
+
+.objective-section.section-credits .section-list li:first-child {
+  font-size: 70px;
+  line-height: 70px;
+  color: #7ca7bc;
+}
+
+.objective-section.section-credits .section-list li {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-weight: 600;
+}
+
+.objective-section.section-credits .section-info {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.objective-section.section-logos .section-list li {
+  margin-bottom: 20px;
+}
+
+.objective-section.section-logos img {
+  max-width: 150px;
+}
+
+.town-hall-details .section-left {
+  width: 640px;
+  padding: 0 0 0 24px;
+}
+
+.town-hall-details .section-right {
+  width: 364px;
+  padding: 0 18px 0 0;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
+.town-hall-details .section-title {
+  font-size: 22px;
+}
+
+.town-hall-details .section-credits .section-list li:first-child {
+  font-size: 70px;
+  line-height: 70px;
+}
+
+.town-hall-details .section-info,
+.town-hall-details .section-list li,
+.town-hall-details .section-disclosure .section-title {
+  font-size: 18px;
+}
+
+.town-hall-details .section-disclosure .section-info {
+  font-size: 14px;
+}
+
+.town-hall-footer {
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 15%, 50% 0, 0 15%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 15%, 50% 0, 0 15%);
+  clip-path: url(#clippingFoot);
+}
+
+.town-hall-hero-content {
+  padding-top: 82px;
+}
+
+.town-hall-footer-hero {
+  /* background-image: url('../images/mm-new-targets.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  opacity: 1;
+}
+
+.town-hall-hero-content-color {
+  position: absolute;
+  height: inherit;
+  opacity: 1;
+  width: 100%;
+  z-index: -1;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: url(#clipping);
+}
+
+.town-hall-hero-content-bg {
+  position: absolute;
+  /* background-image: url('../images/mm-new-targets.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: inherit;
+  opacity: 1;
+  width: 100%;
+  z-index: -2;
+  background-attachment: initial !important;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: url(#clipping);
+}
+
+.town-hall-register {
+  padding-top: 27px;
+}
+
+.town-hall-register .loader {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.town-hall-register.town-hall__section--ready .loader {
+  display: none;
+  -webkit-transition: opacity ease 400ms;
+  transition: opacity ease 400ms;
+}
+
+.town-hall-register-arrow,
+.town-hall-footer-hero-content {
+  background-image: url('../images/mask-downarrow.svg');
+  height: 100px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.town-hall-register-arrow {
+  display: none;
+  margin-top: -100px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.register-links {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.register-links p {
+    font-family: 'proxima_nova_rgbold',sans-serif;
+    font-size: 33px;
+    line-height: 35px;
+    color: #333132;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 1.2s ease;
+    -webkit-transition: opacity 1.2s ease;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.register-button {
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    font-family: 'proxima_nova_rgregular',sans-serif;
+    border-radius: 6px;
+    background-color: #1b88bf;
+    border: 2px solid #1b88bf;
+    padding: 16px 0;
+    width: 260px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.register-button a {
+    color: inherit;
+}
+
+.town-hall-hero {
+  height: 425px;
+  text-align: center;
+  color: #fff;
+}
+
+.town-hall-footer-hero-content {
+  margin-top: -196px;
+  display: none;
+}
+
+.town-hall-footer-hero {
+  height: 196px;
+}
+
+.town-hall-title {
+  font-family: "proxima_nova_rgbold", sans-serif;
+  font-size: 40px;
+  line-height: 43px;
+}
+
+.town-hall-subtitle {
+  font-family: "proxima_nova_ltlight", sans-serif;
+  font-size: 38px;
+  line-height: 43px;
+}
+
+.town-hall-location {
+  font-family: 'Roboto Condensed', arial, sans-serif;
+  font-size: 16px;
+  margin-top: 28px;
+  text-transform: uppercase;
+}
+
+.town-hall-calander {
+  font-family: 'Roboto Condensed', arial, sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.medscape-live {
+  margin-top: 38px;
+}
+
+.register-now {
+  border-bottom: solid 1px rgba(151, 151, 151, 0.3);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.register-now span {
+  font-family: "proxima_nova_ltsemibold", sans-serif;
+  font-size: 33px;
+  line-height: 1.06;
+  color: #333132;
+}
+
+.townhall-entry {
+  visibility: hidden;
+}
+
+.town-hall__section--ready .qna-render .question-content p {
+  opacity: 1;
+}
+
+.program-schedule span span {
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: 4px;
+  letter-spacing: 0;
+}
+
+/** SPONSORS **/
+
+.town-hall-sponsors {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 40px;
+  min-height: 250px;
+}
+
+.town-hall-sponsors .town-hall-partners,
+.town-hall-sponsors .town-hall-supporters {
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: center;
+  margin-bottom: 35px;
+  width: 100%;
+  align-self: flex-start;
+  min-height: 220px;
+}
+
+.town-hall-sponsors .partners-title,
+.town-hall-sponsors .partners-info,
+.town-hall-sponsors .supporters-title,
+.town-hall-sponsors .supporters-info {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+}
+
+.town-hall-sponsors .partners-title,
+.town-hall-sponsors .supporters-title {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.town-hall-sponsors .partners-logos {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.town-hall-sponsors .partners-logos div,
+.town-hall-sponsors .supporters-logos div {
+  opacity: 0;
+  transition: all ease 800ms;
+  -webkit-transition: all ease 800ms;
+  visibility: hidden;
+  display: none;
+}
+
+.town-hall-sponsors .partners-logos img,
+.town-hall-sponsors .supporters-logos img {
+  max-width: 50%;
+}
+
+.town-hall-sponsors .partners-logos div.showLogo,
+.town-hall-sponsors .supporters-logos div.showLogo {
+  opacity: 1;
+  visibility: visible;
+  display: inline-block;
+}
+
+.town-hall-sponsors .partners-info,
+.town-hall-sponsors .supporters-info {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.town-hall-sponsors .partners-logos,
+.town-hall-sponsors .supporters-logos {
+  font-family: 'proxima_nova_rgbold', sans-serif;
+  font-size: 18px;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.town-hall-calendar {
+  display: inline-flex;
+  flex-flow: column;
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-left .objective-section .section-list li ul li {
+    font-size: 16px;
+  }
+
+  /** SPONSORS **/
+  .town-hall-sponsors {
+    flex-flow: row nowrap;
+    text-align: center;
+  }
+  .town-hall-sponsors .town-hall-partners,
+  .town-hall-sponsors .town-hall-supporters {
+    width: 50%
+  }
+  .town-hall-sponsors .partners-title,
+  .town-hall-sponsors .supporters-title {
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .town-hall-sponsors .partners-logos~img {
+    max-width: initial;
+  }
+  .town-hall-sponsors .supporters-info,
+  .town-hall-sponsors .partners-info {
+    width: 50%;
+    font-size: 18px;
+  }
+  .town-hall-sponsors .supporters-logos {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .town-hall-title {
+    font-family: "proxima_nova_rgbold", sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .town-hall-subtitle {
+    font-family: "proxima_nova_ltlight", sans-serif;
+    font-size: 28px;
+    line-height: 31px;
+  }
+  .town-hall-location {
+    font-family: 'Roboto Condensed', arial, sans-serif;
+    font-size: 15px;
+    margin-top: 28px;
+  }
+  .town-hall-calander {
+    font-family: 'Roboto Condensed', arial, sans-serif;
+    font-size: 27px;
+  }
+  .medscape-live {
+    margin-top: 28px;
+  }
+  .town-hall-hero {
+    height: 385px;
+  }
+  .town-hall-hero-content-bg {
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: url(#clipping);
+  }
+  .town-hall-register {
+    padding-top: 3px;
+  }
+
+  /*** INFO ***/
+  .town-hall-info .detail {
+    font-size: 16px;
+  }
+  .town-hall-info .town-hall--subsection.icon-left,
+  .town-hall-info .town-hall--subsection.icon-right {
+    background-size: 50px 50px;
+  }
+  .town-hall-info .town-hall--subsection.icon-left {
+    padding-left: 104px;
+    background-position: 35px 0;
+  }
+  .town-hall-info .town-hall--subsection.icon-right {
+    padding-right: 104px;
+    background-position: 94% 0;
+    text-align: right;
+  }
+
+  /*** SPEAKERS ***/
+  .town-hall-speaker .speaker,
+  .town-hall-program .program-title {
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .town-hall-speaker .speaker-list-item {
+    flex-flow: row nowrap;
+    max-width: 100%;
+  }
+  .town-hall-speaker .speaker-name,
+  .town-hall-speaker .speaker-title {
+    text-align: left;
+  }
+  .town-hall-speaker .speaker-name {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  .town-hall-speaker .speaker-title,
+  .town-hall-speaker .speaker-info,
+  .town-hall-speaker .speaker-twitter,
+  .town-hall-speaker .speaker-linkedin,
+  .town-hall-speaker .program-info-subtitle {
+    font-size: 15px;
+  }
+  .town-hall-speaker .speaker-list-item img {
+    margin-right: 30px;
+  }
+  /*** PROGRAM ***/
+  .town-hall-program .program-title {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+  }
+  .town-hall-program .program-subtitle {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .town-hall-program .program-info-title {
+    font-size: 20px;
+  }
+  .town-hall-program .program-info-subtitle {
+    font-size: 15px;
+  }
+  .town-hall-program .program-timeline-wrap {
+    padding-top: 31px;
+  }
+  .town-hall-program .program-schedule span {
+    font-size: 35px;
+    letter-spacing: -1px;
+  }
+  .town-hall-program .program-schedule span span {
+    margin-left: -5px;
+    font-size: 15px;
+    line-height: 33px;
+    letter-spacing: 0
+  }
+  .town-hall-program .program-progress {
+    padding: 10px 25px 0;
+  }
+  .town-hall-program .program-info-wrap {
+    padding-top: 5px;
+  }
+  .program-timeline ul li {
+    font-size: 15px;
+  }
+  /*** OBJECTIVES ***/
+  .town-hall-details {
+    padding-top: 15px;
+    flex-flow: row nowrap;
+  }
+  .town-hall-details .section-left {
+    width: 627px;
+    padding: 0 0 0 24px;
+  }
+  .town-hall-details .section-right {
+    width: 354px;
+    padding: 0 18px 0 0;
+    margin-left: 30px;
+    padding-left: 30px;
+  }
+  .town-hall-details .section-title {
+    font-size: 18px;
+  }
+  .town-hall-details .section-credits .section-list li:first-child {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .section-left .objective-section .section-list li ul li {
+    font-size: 16px;
+  }
+  .town-hall-details .section-info,
+  .town-hall-details .section-list li,
+  .town-hall-details .section-disclosure .section-title {
+    font-size: 16px;
+  }
+  .town-hall-details .section-disclosure .section-info {
+    font-size: 13px;
+  }
+
+  /** SPONSORS **/
+  .town-hall-sponsors {
+    flex-flow: row nowrap;
+    text-align: center;
+  }
+  .town-hall-sponsors .town-hall-partners,
+  .town-hall-sponsors .town-hall-supporters {
+    width: 50%
+  }
+  .town-hall-sponsors .partners-title,
+  .town-hall-sponsors .supporters-title {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .town-hall-sponsors .partners-logos~img {
+    max-width: initial;
+  }
+  .town-hall-sponsors .supporters-info {
+    width: 50%;
+    font-size: 16px;
+  }
+  .town-hall-sponsors .supporters-logos {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  .town-hall-header {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .town-hall-hero-content-bg,
+  .town-hall-footer-hero {
+    background-size: auto;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .town-hall-header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .town-hall-hero-content-bg,
+  .town-hall-footer-hero {
+    background-size: auto;
+  }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .speaker-list-item li:last-child {
+    max-width: 75%
+  }
+  .town-hall-hero-content-bg,
+  .town-hall-footer-hero {
+    background-size: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .town-hall-hero {
+    height: 405px;
+  }
+  .town-hall-hero-content {
+    padding-top: 83px;
+  }
+  .town-hall-hero-content-bg {
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: url(#clipping);
+  }
+  .town-hall-hero-content-bg,
+  .town-hall-footer-hero {
+    background-size: auto;
+  }
+  .town-hall-title {
+    font-size: 30px;
+    line-height: 33px;
+    max-width: 543px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .town-hall-subtitle {
+    font-size: 28px;
+    line-height: 31px;
+    max-width: 734px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .town-hall-location {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .town-hall-calander {
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  .medscape-live {
+    margin-top: 20px;
+  }
+  .register-now span {
+    font-size: 25px;
+  }
+  .town-hall-register {
+    padding-top: 0 !important;
+  }
+
+  .town-hall-info .town-hall--subsection.icon-left,
+  .town-hall-info .town-hall--subsection.icon-right {
+    background-size: 50px 50px;
+  }
+  .town-hall-info .town-hall--subsection.icon-left {
+    padding-left: 104px;
+    background-position: 35px 0;
+  }
+  .town-hall-info .town-hall--subsection.icon-right {
+    padding-right: 104px;
+    background-position: 94% 0;
+    text-align: right;
+  }
+  .town-hall-content {
+    flex-flow: column nowrap;
+  }
+  .town-hall-speaker .speaker,
+  .town-hall-program .program-title {
+    font-size: 25px;
+    text-align: center;
+    flex-flow: column;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .speaker-name {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  .speaker-title,
+  .speaker-info,
+  .program-schedule span span,
+  .program-info-subtitle,
+  .program-timeline ul li {
+    font-size: 15px;
+  }
+  .town-hall-info .title {
+    font-size: 20px;
+  }
+  .town-hall-info .detail {
+    font-size: 16px;
+  }
+  .town-hall-speaker .speaker,
+  .town-hall-program .program-title {
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .speaker-name,
+  .speaker-title {
+    text-align: left;
+  }
+  .speaker-list-item {
+    flex-flow: row nowrap;
+    max-width: 100%;
+  }
+  .speaker-list-item li:first-child {
+    padding-right: 30px;
+  }
+  .town-hall-content .town-hall-speaker {
+    max-width: 650px;
+  }
+  .town-hall-content .town-hall-speaker,
+  .town-hall-content .town-hall-program {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  .town-hall-content .town-hall-program {
+    padding: 0;
+    max-width: 650px !important;
+    padding-top: 30px;
+  }
+  .town-hall-program .program-subtitle {
+    font-size: 18px;
+  }
+  .town-hall-program .program-info-title {
+    font-size: 20px
+  }
+  .town-hall-program .program-title {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+  }
+  .town-hall-program .program-title span {
+    text-align: center;
+    margin: 0;
+  }
+  .town-hall-program .program-timeline-wrap {
+    padding-top: 31px;
+  }
+  .town-hall-program .program-schedule span {
+    font-size: 35px;
+    letter-spacing: -1px;
+  }
+  .town-hall-program .program-schedule span span {
+    margin-left: -5px;
+    font-size: 15px;
+    line-height: 33px;
+    letter-spacing: 0
+  }
+  .town-hall-program .program-progress {
+    padding: 10px 25px 0;
+  }
+  .town-hall-program .program-info-wrap {
+    padding-top: 5px;
+  }
+
+  /****** OBJECTIVES ******/
+  .town-hall-details {
+    flex-flow: row nowrap;
+  }
+  .town-hall-details .section-left {
+    width: 424px;
+    padding: 0 0 0 24px;
+  }
+  .town-hall-details .section-right {
+    width: 342px;
+    padding: 0 18px 0 0;
+    margin-left: 30px;
+    padding-left: 30px;
+  }
+  .section-left {
+    max-width: 653px;
+  }
+  .section-right {
+    max-width: 369px;
+  }
+  .section-left .objective-section .section-list {
+    flex-flow: column nowrap;
+    column-count: 1;
+  }
+  .section-left .objective-section .section-list li {
+    width: 100%;
+  }
+  .section-left .objective-section .section-list li ul li {
+    font-size: 16px;
+  }
+  .objective-section .section-title {
+    font-size: 18px;
+  }
+  .objective-section.section-credits .section-list li:first-child {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .objective-section .section-info,
+  .objective-section .section-list li,
+  .objective-section.section-disclosure .section-title {
+    font-size: 16px;
+  }
+  .objective-section.section-disclosure .section-info {
+    font-size: 13px;
+  }
+
+  /** SPONSORS **/
+  .town-hall-sponsors {
+    flex-flow: row nowrap;
+    text-align: center;
+  }
+  .town-hall-sponsors .town-hall-partners,
+  .town-hall-sponsors .town-hall-supporters {
+    width: 50%
+  }
+  .town-hall-sponsors .partners-title,
+  .town-hall-sponsors .supporters-title {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .town-hall-sponsors .partners-logos~img {
+    max-width: initial;
+  }
+  .town-hall-sponsors .supporters-info {
+    width: 50%;
+    font-size: 16px;
+  }
+  .town-hall-sponsors .supporters-logos {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .register-links p {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .town-hall-info .town-hall--subsection,
+  .town-hall-info .town-hall--subsection.icon-left,
+  .town-hall-info .town-hall--subsection.icon-right {
+    background-image: none;
+  }
+  h2 {
+    font-size: 1.263em;
+  }
+  .town-hall-header {
+    padding-left: 14px;
+    padding-right: 25px;
+    height: 50px;
+    padding-top: 10px;
+  }
+  .town-hall-hero {
+    height: 335px;
+  }
+  .town-hall-hero-content {
+    padding-top: 40px;
+  }
+  .town-hall-hero-content-bg {
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: url(#clipping2);
+  }
+  .town-hall-hero-content-bg,
+  .town-hall-footer-hero {
+    background-size: auto;
+  }
+  .town-hall-medscape-logo {
+    width: 100px;
+    height: 22px;
+  }
+  .register {
+    font-family: 'Roboto Condensed', arial, sans-serif;
+    padding: 8px 0;
+    margin-top: -5px;
+    margin-right: -15px;
+  }
+  .register.active {
+    padding: 8px 24px;
+    width: 115px;
+  }
+  .town-hall-info .title {
+    font-size: 18px;
+  }
+  .town-hall-info .detail {
+    font-size: 15px;
+  }
+  .town-hall-title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 5px;
+  }
+  .town-hall-subtitle {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .town-hall-location {
+    font-size: 14px;
+    margin-top: 23px;
+    text-transform: uppercase;
+  }
+  .town-hall-calander {
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  .medscape-live {
+    margin-top: 20px;
+  }
+  .medscape-live img {
+    width: 57px;
+  }
+  .register-now {
+    font-size: 20px;
+    line-height: 1.0;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  .register-now span {
+    font-size: 25px;
+  }
+  .register-button {
+    flex-flow: column;
+  }
+  .register-button button {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .register-button button:first-child {
+    margin-right: 0px;
+  }
+  .town-hall-info .town-hall--subsection,
+  .town-hall-info .town-hall--subsection.icon-left,
+  .town-hall-info .town-hall--subsection.icon-right {
+    padding-left: 0;
+    background-image: none !important;
+    margin-left: auto;
+    width: 90%;
+    margin-right: auto;
+  }
+  .town-hall-info .town-hall--subsection {
+    background-size: 50px 50px;
+    padding-left: 78px;
+    max-width: 684px;
+    margin-bottom: 30px;
+  }
+  .town-hall-info .town-hall--subsection:last-child,
+  .town-hall-info .town-hall--subsection p:last-child {
+    margin-bottom: 0px;
+  }
+  .town-hall-info .town-hall--subsection.icon-left {
+    background-position: 30px 0;
+  }
+  .town-hall-info .town-hall--subsection.icon-right {
+    background-position: 95% 0;
+  }
+  .town-hall-content {
+    flex-flow: column nowrap;
+    padding-top: 21px;
+  }
+  .town-hall-content .town-hall-speaker,
+  .town-hall-content .town-hall-program {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%
+  }
+  .town-hall-speaker .speaker,
+  .town-hall-program .program-title {
+    font-size: 20px;
+    text-align: center;
+    flex-flow: column;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .speaker-name {
+    font-size: 16px;
+  }
+  .speaker-title,
+  .speaker-info,
+  .speaker-twitter a,
+  .speaker-linkedin a {
+    font-size: 14px;
+  }
+  .speaker-list-item:last-child,
+  .program-timeline:last-child {
+    padding: 0
+  }
+  .speaker-list-item {
+    flex-flow: column nowrap;
+    max-width: 100%;
+  }
+  .speaker-list-item li img {
+    margin-right: 0px;
+  }
+  .speaker-list-item li:first-child {
+    text-align: center;
+  }
+  .speaker-name,
+  .speaker-title {
+    text-align: center;
+  }
+  .town-hall-program {
+    margin-top: 60px;
+  }
+  .town-hall-program .program-title {
+    margin-bottom: 10px
+  }
+  .town-hall-program .program-title .program-subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 0 0 0
+  }
+  .program-schedule span {
+    font-size: 25px;
+    line-height: 21px;
+  }
+  .town-hall-program .program-schedule span span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .town-hall-program .program-info-title {
+    font-size: 18px;
+  }
+  .town-hall-program .program-info-subtitle * {
+    font-size: 14px;
+  }
+  .program-timeline-wrap {
+    position: relative;
+    left: -20px;
+  }
+  .program-timeline {
+    padding-bottom: 35px;
+    margin-top: 0;
+  }
+  .program-timeline .program-progress {
+    order: 1;
+    width: 39px;
+    padding: 0;
+  }
+  .program-timeline .program-schedule {
+    order: 2;
+    width: 0;
+    margin-top: 5px;
+  }
+  .program-schedule span {
+    font-size: 25px;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 0px;
+  }
+  .town-hall-program .program-schedule span span {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 4px;
+  }
+  .program-timeline .program-info-wrap {
+    order: 3;
+    padding-top: 15px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .town-hall-details {
+    flex-flow: column nowrap;
+    padding-top: 30px;
+  }
+  .town-hall-details .section-left,
+  .town-hall-details .section-right {
+    width: 100%;
+    margin: 0;
+    padding: 0 13px;
+    max-width: 100%;
+    border: 0;
+  }
+  .objective-section {
+    margin-bottom: 20px;
+  }
+  .objective-section .section-info,
+  .objective-section .section-list li,
+  .section-left .objective-section .section-list li ul li {
+    font-size: 16px;
+  }
+  .objective-section .section-title {
+    text-align: center;
+    font-size: 18px;
+  }
+  .objective-section .section-info,
+  .objective-section .section-list li .section-left .objective-section .section-list {
+    flex-flow: column nowrap;
+  }
+  .section-left .objective-section .section-list {
+    column-count: 1;
+  }
+  .section-left .objective-section .section-list li {
+    width: 100%;
+  }
+  .objective-section.section-disclosure .section-title {
+    font-size: 16px;
+  }
+  .objective-section.section-disclosure .section-info {
+    font-size: 12px;
+  }
+  .objective-section.section-credits ul.section-list li {
+    text-align: center
+  }
+  .objective-section.section-credits ul.section-list li:first-child {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .objective-section.section-credits ul.section-list li:nth-child(2) {
+    font-size: 16px;
+  }
+  .objective-section.section-logos ul.section-list li {
+    text-align: center;
+  }
+  .town-hall-map {
+      flex-flow: column;
+  }
+  .town-hall-map .town-hall-mapNav {
+      height: 300px;
+  }
+  .town-hall-sponsors .divider-bar {
+    display: none;
+  }
+  .town-hall-sponsors .divider-bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .town-hall-sponsors .town-hall-partners,
+  .town-hall-sponsors .town-hall-supporters {
+    margin-bottom: 0;
+    min-height: 160px;
+  }
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .town-hall-register-arrow {
+    display: inline-block;
+  }
+  .town-hall-content .town-hall--subsection {
+    width: 550px
+  }
+  .town-hall-sponsors .partners-logos div,
+  .town-hall-sponsors .supporters-logos div {
+    height: 150px
+  }
+  .town-hall-footer-hero-content {
+    display: block;
+    position: absolute;
+  }
+}
+
+.town-hall-sponsors-border {
+  border-bottom: 1px solid #e3e3e3;
+}
