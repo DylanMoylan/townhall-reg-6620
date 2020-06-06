@@ -1445,6 +1445,7 @@ ul {
   }
   .register-button {
     flex-flow: column;
+    margin-bottom: 10px;
   }
   .register-button button {
     display: block;
